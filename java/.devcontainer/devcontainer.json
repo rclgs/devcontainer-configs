@@ -1,0 +1,25 @@
+{
+    "name": "Dev Container: Java",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "25",
+            "jdkDistro": "tem",
+            "installMaven": false,
+            "installGradle": false
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker": {},
+        "ghcr.io/devcontainers/features/github-cli": {}
+    },
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "redhat.vscode-xml",
+                "redhat.vscode-yaml",
+                "vmware.vscode-boot-dev-pack"
+            ]
+        }
+    }
+}
